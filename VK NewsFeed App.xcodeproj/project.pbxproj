@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422D0B896A4A1918937025A6 /* Pods_VK_NewsFeed_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */; };
 		FCA2B8382885D6B6008B4E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */; };
 		FCA2B83A2885D6B6008B4E96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B8392885D6B6008B4E96 /* SceneDelegate.swift */; };
 		FCA2B83C2885D6B6008B4E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B83B2885D6B6008B4E96 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08149725B0F06831F1EDCDD1 /* Pods-VK NewsFeed App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK NewsFeed App.release.xcconfig"; path = "Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App.release.xcconfig"; sourceTree = "<group>"; };
+		1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_NewsFeed_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92CA72E201915CD96A279CB /* Pods-VK NewsFeed App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK NewsFeed App.debug.xcconfig"; path = "Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App.debug.xcconfig"; sourceTree = "<group>"; };
 		FCA2B8342885D6B6008B4E96 /* VK NewsFeed App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK NewsFeed App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA2B8392885D6B6008B4E96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422D0B896A4A1918937025A6 /* Pods_VK_NewsFeed_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30EB282F01CC98D03193C5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F92CA72E201915CD96A279CB /* Pods-VK NewsFeed App.debug.xcconfig */,
+				08149725B0F06831F1EDCDD1 /* Pods-VK NewsFeed App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F95525D58874977009887A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCA2B82B2885D6B6008B4E96 = {
 			isa = PBXGroup;
 			children = (
 				FCA2B8362885D6B6008B4E96 /* VK NewsFeed App */,
 				FCA2B8352885D6B6008B4E96 /* Products */,
+				F30EB282F01CC98D03193C5A /* Pods */,
+				F95525D58874977009887A42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCA2B8482885D6B9008B4E96 /* Build configuration list for PBXNativeTarget "VK NewsFeed App" */;
 			buildPhases = (
+				8FF1244F16D0922E617C9E3C /* [CP] Check Pods Manifest.lock */,
 				FCA2B8302885D6B6008B4E96 /* Sources */,
 				FCA2B8312885D6B6008B4E96 /* Frameworks */,
 				FCA2B8322885D6B6008B4E96 /* Resources */,
+				82490B9625F617628A80B9EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82490B9625F617628A80B9EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FF1244F16D0922E617C9E3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VK NewsFeed App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCA2B8302885D6B6008B4E96 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		FCA2B8492885D6B9008B4E96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F92CA72E201915CD96A279CB /* Pods-VK NewsFeed App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		FCA2B84A2885D6B9008B4E96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08149725B0F06831F1EDCDD1 /* Pods-VK NewsFeed App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
