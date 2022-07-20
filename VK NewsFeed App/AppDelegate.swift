@@ -11,10 +11,15 @@ import VK_ios_sdk
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var authService: AuthService!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.authService = AuthService()
+        return true
+    }
+
+    open func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        VKSdk.processOpen(url, fromApplication: UIApplication.OpenURLOptionsKey.sourceApplication.rawValue)
         return true
     }
 

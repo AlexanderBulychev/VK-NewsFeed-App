@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		422D0B896A4A1918937025A6 /* Pods_VK_NewsFeed_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */; };
+		FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F3ABA28880E3500243494 /* AuthService.swift */; };
+		FC8F3ABE288813FE00243494 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F3ABD288813FE00243494 /* AuthViewController.swift */; };
+		FC8F3AC02888142C00243494 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */; };
 		FCA2B8382885D6B6008B4E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */; };
 		FCA2B83A2885D6B6008B4E96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B8392885D6B6008B4E96 /* SceneDelegate.swift */; };
-		FCA2B83C2885D6B6008B4E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B83B2885D6B6008B4E96 /* ViewController.swift */; };
-		FCA2B83F2885D6B6008B4E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA2B83D2885D6B6008B4E96 /* Main.storyboard */; };
 		FCA2B8412885D6B9008B4E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA2B8402885D6B9008B4E96 /* Assets.xcassets */; };
 		FCA2B8442885D6B9008B4E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA2B8422885D6B9008B4E96 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,11 +21,12 @@
 		08149725B0F06831F1EDCDD1 /* Pods-VK NewsFeed App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK NewsFeed App.release.xcconfig"; path = "Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App.release.xcconfig"; sourceTree = "<group>"; };
 		1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_NewsFeed_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92CA72E201915CD96A279CB /* Pods-VK NewsFeed App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK NewsFeed App.debug.xcconfig"; path = "Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App.debug.xcconfig"; sourceTree = "<group>"; };
+		FC8F3ABA28880E3500243494 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FC8F3ABD288813FE00243494 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		FCA2B8342885D6B6008B4E96 /* VK NewsFeed App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK NewsFeed App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA2B8392885D6B6008B4E96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCA2B83B2885D6B6008B4E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCA2B83E2885D6B6008B4E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCA2B8402885D6B9008B4E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA2B8432885D6B9008B4E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA2B8452885D6B9008B4E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				F92CA72E201915CD96A279CB /* Pods-VK NewsFeed App.debug.xcconfig */,
 				08149725B0F06831F1EDCDD1 /* Pods-VK NewsFeed App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +59,23 @@
 				1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC8F3ABC28880E5300243494 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F3ABA28880E3500243494 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FC8F3AC12888145C00243494 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F3ABD288813FE00243494 /* AuthViewController.swift */,
+				FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		FCA2B82B2885D6B6008B4E96 = {
@@ -81,10 +99,10 @@
 		FCA2B8362885D6B6008B4E96 /* VK NewsFeed App */ = {
 			isa = PBXGroup;
 			children = (
+				FC8F3ABC28880E5300243494 /* Services */,
+				FC8F3AC12888145C00243494 /* Auth */,
 				FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */,
 				FCA2B8392885D6B6008B4E96 /* SceneDelegate.swift */,
-				FCA2B83B2885D6B6008B4E96 /* ViewController.swift */,
-				FCA2B83D2885D6B6008B4E96 /* Main.storyboard */,
 				FCA2B8402885D6B9008B4E96 /* Assets.xcassets */,
 				FCA2B8422885D6B9008B4E96 /* LaunchScreen.storyboard */,
 				FCA2B8452885D6B9008B4E96 /* Info.plist */,
@@ -153,8 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA2B8442885D6B9008B4E96 /* LaunchScreen.storyboard in Resources */,
+				FC8F3AC02888142C00243494 /* AuthViewController.storyboard in Resources */,
 				FCA2B8412885D6B9008B4E96 /* Assets.xcassets in Resources */,
-				FCA2B83F2885D6B6008B4E96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +225,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA2B83C2885D6B6008B4E96 /* ViewController.swift in Sources */,
+				FC8F3ABE288813FE00243494 /* AuthViewController.swift in Sources */,
 				FCA2B8382885D6B6008B4E96 /* AppDelegate.swift in Sources */,
 				FCA2B83A2885D6B6008B4E96 /* SceneDelegate.swift in Sources */,
+				FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCA2B83D2885D6B6008B4E96 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCA2B83E2885D6B6008B4E96 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCA2B8422885D6B9008B4E96 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,7 +375,6 @@
 				INFOPLIST_FILE = "VK NewsFeed App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +403,6 @@
 				INFOPLIST_FILE = "VK NewsFeed App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
