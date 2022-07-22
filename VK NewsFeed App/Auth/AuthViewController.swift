@@ -6,7 +6,8 @@ class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        authService = AuthService()
+//        authService = AuthService()
+        authService = AppDelegate.shared().authService
     }
 
     @IBAction func signInTouch() {

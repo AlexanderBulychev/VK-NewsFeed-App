@@ -12,7 +12,6 @@
 		FC8F3ABE288813FE00243494 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F3ABD288813FE00243494 /* AuthViewController.swift */; };
 		FC8F3AC02888142C00243494 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */; };
 		FCA2B8382885D6B6008B4E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */; };
-		FCA2B83A2885D6B6008B4E96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B8392885D6B6008B4E96 /* SceneDelegate.swift */; };
 		FCA2B8412885D6B9008B4E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA2B8402885D6B9008B4E96 /* Assets.xcassets */; };
 		FCA2B8442885D6B9008B4E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA2B8422885D6B9008B4E96 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,7 +25,6 @@
 		FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		FCA2B8342885D6B6008B4E96 /* VK NewsFeed App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK NewsFeed App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCA2B8392885D6B6008B4E96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FCA2B8402885D6B9008B4E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA2B8432885D6B9008B4E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA2B8452885D6B9008B4E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				FC8F3ABC28880E5300243494 /* Services */,
 				FC8F3AC12888145C00243494 /* Auth */,
 				FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */,
-				FCA2B8392885D6B6008B4E96 /* SceneDelegate.swift */,
 				FCA2B8402885D6B9008B4E96 /* Assets.xcassets */,
 				FCA2B8422885D6B9008B4E96 /* LaunchScreen.storyboard */,
 				FCA2B8452885D6B9008B4E96 /* Info.plist */,
@@ -227,7 +224,6 @@
 			files = (
 				FC8F3ABE288813FE00243494 /* AuthViewController.swift in Sources */,
 				FCA2B8382885D6B6008B4E96 /* AppDelegate.swift in Sources */,
-				FCA2B83A2885D6B6008B4E96 /* SceneDelegate.swift in Sources */,
 				FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
