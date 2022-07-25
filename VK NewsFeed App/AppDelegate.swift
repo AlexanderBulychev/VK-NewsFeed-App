@@ -51,12 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthServiceDelegate {
 
     func authServiceSignIn() {
         print(#function)
-        guard let feedVC = UIStoryboard(
-            name: "FeedViewController",
-            bundle: nil
-        ).instantiateInitialViewController() as? FeedViewController else { return }
-        let navCV = UINavigationController(rootViewController: feedVC)
-        window?.rootViewController = navCV
+        let feedVC: FeedViewController = UIViewController.loadFromStoryboard()
+        let navVC = UINavigationController(rootViewController: feedVC)
+        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
     }
 
@@ -66,10 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthServiceDelegate {
 
     func authVC() {
         print(#function)
-        guard let authVC = UIStoryboard(
-            name: "AuthViewController",
-            bundle: nil
-        ).instantiateInitialViewController() as? AuthViewController else { return }
+        let authVC: AuthViewController = UIViewController.loadFromStoryboard()
         window?.rootViewController = UINavigationController(rootViewController: authVC)
         window?.makeKeyAndVisible()
     }
