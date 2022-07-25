@@ -14,6 +14,9 @@
 		FCA2B8382885D6B6008B4E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */; };
 		FCA2B8412885D6B9008B4E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA2B8402885D6B9008B4E96 /* Assets.xcassets */; };
 		FCA2B8442885D6B9008B4E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA2B8422885D6B9008B4E96 /* LaunchScreen.storyboard */; };
+		FCA5F481288E751900B59AE3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5F480288E751900B59AE3 /* FeedViewController.swift */; };
+		FCA5F483288E752F00B59AE3 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA5F482288E752F00B59AE3 /* FeedViewController.storyboard */; };
+		FCA5F485288E7ADC00B59AE3 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5F484288E7ADC00B59AE3 /* UIViewController+Storyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		FCA2B8402885D6B9008B4E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA2B8432885D6B9008B4E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA2B8452885D6B9008B4E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA5F480288E751900B59AE3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		FCA5F482288E752F00B59AE3 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		FCA5F484288E7ADC00B59AE3 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				FC8F3ABA28880E3500243494 /* AuthService.swift */,
+				FCA5F480288E751900B59AE3 /* FeedViewController.swift */,
+				FCA5F482288E752F00B59AE3 /* FeedViewController.storyboard */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -97,14 +105,23 @@
 		FCA2B8362885D6B6008B4E96 /* VK NewsFeed App */ = {
 			isa = PBXGroup;
 			children = (
+				FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */,
 				FC8F3ABC28880E5300243494 /* Services */,
 				FC8F3AC12888145C00243494 /* Auth */,
-				FCA2B8372885D6B6008B4E96 /* AppDelegate.swift */,
+				FCA5F486288E7AE400B59AE3 /* Helpers */,
 				FCA2B8402885D6B9008B4E96 /* Assets.xcassets */,
 				FCA2B8422885D6B9008B4E96 /* LaunchScreen.storyboard */,
 				FCA2B8452885D6B9008B4E96 /* Info.plist */,
 			);
 			path = "VK NewsFeed App";
+			sourceTree = "<group>";
+		};
+		FCA5F486288E7AE400B59AE3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FCA5F484288E7ADC00B59AE3 /* UIViewController+Storyboard.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +187,7 @@
 				FCA2B8442885D6B9008B4E96 /* LaunchScreen.storyboard in Resources */,
 				FC8F3AC02888142C00243494 /* AuthViewController.storyboard in Resources */,
 				FCA2B8412885D6B9008B4E96 /* Assets.xcassets in Resources */,
+				FCA5F483288E752F00B59AE3 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +242,8 @@
 			files = (
 				FC8F3ABE288813FE00243494 /* AuthViewController.swift in Sources */,
 				FCA2B8382885D6B6008B4E96 /* AppDelegate.swift in Sources */,
+				FCA5F481288E751900B59AE3 /* FeedViewController.swift in Sources */,
+				FCA5F485288E7ADC00B59AE3 /* UIViewController+Storyboard.swift in Sources */,
 				FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
