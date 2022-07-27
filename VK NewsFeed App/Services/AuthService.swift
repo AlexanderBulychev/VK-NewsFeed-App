@@ -15,7 +15,7 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     weak var delegate: AuthServiceDelegate?
 
     var token: String? {
-        VKSdk.accessToken().accessToken
+        VKSdk.accessToken()?.accessToken
     }
 
     override init() {
@@ -27,7 +27,7 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     }
 
     func wakeUpSession() {
-        let scope = ["offline", "photos", "wall", "friends"]
+        let scope = ["wall", "friends"]
         VKSdk.wakeUpSession(scope) { [delegate] (state, error) in
             if state == VKAuthorizationState.authorized {
                 print("VKAuthorizationState.authorized")

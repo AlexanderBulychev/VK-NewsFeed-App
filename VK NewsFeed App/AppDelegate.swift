@@ -18,6 +18,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthServiceDelegate {
         UIApplication.shared.delegate as! AppDelegate
     }
 
+//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//
+//        window = UIWindow()
+//
+//        self.authService = AuthService()
+//        authService.delegate = self
+//
+//        let scope = ["wall", "friends"]
+//        VKSdk.wakeUpSession(scope) { (state, _) in
+//            if state == VKAuthorizationState.authorized {
+//                self.authServiceSignIn()
+//            } else {
+//                self.authVC()
+//            }
+//        }
+//
+//        return true
+//    }
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         window = UIWindow()
@@ -25,14 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthServiceDelegate {
         self.authService = AuthService()
         authService.delegate = self
 
-        let scope = ["offline"]
-        VKSdk.wakeUpSession(scope) { (state, _) in
-            if state == VKAuthorizationState.authorized {
-                self.authServiceSignIn()
-            } else {
-                self.authVC()
-            }
-        }
+        let authVC: AuthViewController = AuthViewController.loadFromStoryboard()
+
+        window?.rootViewController = authVC
+        window?.makeKeyAndVisible()
 
         return true
     }
