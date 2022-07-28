@@ -10,6 +10,7 @@
 		422D0B896A4A1918937025A6 /* Pods_VK_NewsFeed_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */; };
 		FC735CF1288FE1A800DEB029 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC735CF0288FE1A800DEB029 /* API.swift */; };
 		FC735CF428915C6700DEB029 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC735CF328915C6700DEB029 /* FeedResponse.swift */; };
+		FC735CF62891C17200DEB029 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC735CF52891C17200DEB029 /* NetworkDataFetcher.swift */; };
 		FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F3ABA28880E3500243494 /* AuthService.swift */; };
 		FC8F3ABE288813FE00243494 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F3ABD288813FE00243494 /* AuthViewController.swift */; };
 		FC8F3AC02888142C00243494 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */; };
@@ -28,6 +29,7 @@
 		F92CA72E201915CD96A279CB /* Pods-VK NewsFeed App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK NewsFeed App.debug.xcconfig"; path = "Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App.debug.xcconfig"; sourceTree = "<group>"; };
 		FC735CF0288FE1A800DEB029 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FC735CF328915C6700DEB029 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		FC735CF52891C17200DEB029 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		FC8F3ABA28880E3500243494 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FC8F3ABD288813FE00243494 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				FC8F3ABA28880E3500243494 /* AuthService.swift */,
 				FCA5F488288E889F00B59AE3 /* NetworkService.swift */,
 				FC735CF0288FE1A800DEB029 /* API.swift */,
+				FC735CF52891C17200DEB029 /* NetworkDataFetcher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				FCA2B8382885D6B6008B4E96 /* AppDelegate.swift in Sources */,
 				FCA5F481288E751900B59AE3 /* FeedViewController.swift in Sources */,
 				FCA5F485288E7ADC00B59AE3 /* UIViewController+Storyboard.swift in Sources */,
+				FC735CF62891C17200DEB029 /* NetworkDataFetcher.swift in Sources */,
 				FCA5F489288E889F00B59AE3 /* NetworkService.swift in Sources */,
 				FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */,
 				FC735CF1288FE1A800DEB029 /* API.swift in Sources */,
