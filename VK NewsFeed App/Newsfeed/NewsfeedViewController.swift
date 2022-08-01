@@ -28,7 +28,7 @@ class NewsfeedViewController: UIViewController {
         super.viewDidLoad()
         setup()
         doSomething()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.register(UINib(nibName: "NewsfeedCell", bundle: nil), forCellReuseIdentifier: NewsfeedCell.reuseId)
     }
     
     // MARK: Routing
@@ -73,10 +73,13 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "index: \(indexPath.row)"
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: NewsfeedCell.reuseId,
+            for: indexPath
+        ) as? NewsfeedCell else { return UITableViewCell() }
         return cell
     }
-
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        212
+    }
 }

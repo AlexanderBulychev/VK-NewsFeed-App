@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		422D0B896A4A1918937025A6 /* Pods_VK_NewsFeed_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */; };
+		FC2F6109289660A10062DD2B /* NewsfeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F6108289660A10062DD2B /* NewsfeedCell.swift */; };
+		FC2F610B289662C10062DD2B /* NewsfeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2F610A289662C10062DD2B /* NewsfeedCell.xib */; };
 		FC735CF1288FE1A800DEB029 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC735CF0288FE1A800DEB029 /* API.swift */; };
 		FC735CF428915C6700DEB029 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC735CF328915C6700DEB029 /* FeedResponse.swift */; };
 		FC735CF62891C17200DEB029 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC735CF52891C17200DEB029 /* NetworkDataFetcher.swift */; };
@@ -34,6 +36,8 @@
 		08149725B0F06831F1EDCDD1 /* Pods-VK NewsFeed App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK NewsFeed App.release.xcconfig"; path = "Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App.release.xcconfig"; sourceTree = "<group>"; };
 		1F0997E4E9C514B5EAC6B252 /* Pods_VK_NewsFeed_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_NewsFeed_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92CA72E201915CD96A279CB /* Pods-VK NewsFeed App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK NewsFeed App.debug.xcconfig"; path = "Target Support Files/Pods-VK NewsFeed App/Pods-VK NewsFeed App.debug.xcconfig"; sourceTree = "<group>"; };
+		FC2F6108289660A10062DD2B /* NewsfeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCell.swift; sourceTree = "<group>"; };
+		FC2F610A289662C10062DD2B /* NewsfeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsfeedCell.xib; sourceTree = "<group>"; };
 		FC735CF0288FE1A800DEB029 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FC735CF328915C6700DEB029 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		FC735CF52891C17200DEB029 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC2F61072896606E0062DD2B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F6108289660A10062DD2B /* NewsfeedCell.swift */,
+				FC2F610A289662C10062DD2B /* NewsfeedCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FC735CF228915C3E00DEB029 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +111,7 @@
 		FC735CF72893B64D00DEB029 /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
+				FC2F61072896606E0062DD2B /* Cell */,
 				FC735CFC2893B67C00DEB029 /* NewsfeedViewController.swift */,
 				FC735D042893BBF800DEB029 /* NewsfeedViewController.storyboard */,
 				FC735CFD2893B67C00DEB029 /* NewsfeedInteractor.swift */,
@@ -245,6 +259,7 @@
 				FC8F3AC02888142C00243494 /* AuthViewController.storyboard in Resources */,
 				FCA2B8412885D6B9008B4E96 /* Assets.xcassets in Resources */,
 				FCA5F483288E752F00B59AE3 /* FeedViewController.storyboard in Resources */,
+				FC2F610B289662C10062DD2B /* NewsfeedCell.xib in Resources */,
 				FC735D052893BBF800DEB029 /* NewsfeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +327,7 @@
 				FC735CFF2893B67C00DEB029 /* NewsfeedWorker.swift in Sources */,
 				FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */,
 				FC735CF1288FE1A800DEB029 /* API.swift in Sources */,
+				FC2F6109289660A10062DD2B /* NewsfeedCell.swift in Sources */,
 				FC735D032893B67C00DEB029 /* NewsfeedInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
