@@ -1,4 +1,4 @@
-protocol NewsfeedBusinessLogic {
+protocol NewsfeedBusinessLogic: AnyObject {
     func makeRequest(request: Newsfeed.Model.Request.RequestType)
 }
 
@@ -17,6 +17,15 @@ final class NewsfeedInteractor: NewsfeedBusinessLogic, NewsfeedDataStore {
         switch request {
         case .getNewsFeed:
             fetcher.getFeed { [weak self] feedResponse in
+
+                feedResponse?.groups.map({ group in
+                    print("\(group) \n\n")
+                })
+
+                feedResponse?.items.map({ feedItem in
+                    print(feedItem.sourceId)
+                })
+
                 guard let feedResponse = feedResponse else { return }
                 self?.presenter?.presentData(response: .presentNewsFeed(feed: feedResponse))
             }
