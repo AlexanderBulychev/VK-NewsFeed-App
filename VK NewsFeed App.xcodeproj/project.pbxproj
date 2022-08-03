@@ -28,6 +28,7 @@
 		FCA2B8442885D6B9008B4E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA2B8422885D6B9008B4E96 /* LaunchScreen.storyboard */; };
 		FCA5F485288E7ADC00B59AE3 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5F484288E7ADC00B59AE3 /* UIViewController+Storyboard.swift */; };
 		FCA5F489288E889F00B59AE3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5F488288E889F00B59AE3 /* NetworkService.swift */; };
+		FCCA1DCA289AABFA005475E5 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1DC9289AABFA005475E5 /* WebImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		FCA2B8452885D6B9008B4E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCA5F484288E7ADC00B59AE3 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 		FCA5F488288E889F00B59AE3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FCCA1DC9289AABFA005475E5 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				FCA5F484288E7ADC00B59AE3 /* UIViewController+Storyboard.swift */,
+				FCCA1DC9289AABFA005475E5 /* WebImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				FCA5F485288E7ADC00B59AE3 /* UIViewController+Storyboard.swift in Sources */,
 				FC735CF62891C17200DEB029 /* NetworkDataFetcher.swift in Sources */,
 				FC735D012893B67C00DEB029 /* NewsfeedModels.swift in Sources */,
+				FCCA1DCA289AABFA005475E5 /* WebImageView.swift in Sources */,
 				FCA5F489288E889F00B59AE3 /* NetworkService.swift in Sources */,
 				FC735CFF2893B67C00DEB029 /* NewsfeedWorker.swift in Sources */,
 				FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */,
