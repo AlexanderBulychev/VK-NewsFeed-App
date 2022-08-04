@@ -20,8 +20,8 @@
                         <rect key="frame" x="34" y="18" width="553" height="85"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BK2-jz-IJg" customClass="WebImageView" customModule="VK_NewsFeed_App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BK2-jz-IJg" customClass="WebImageView" customModule="VK_NewsFeed_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                             </imageView>
@@ -43,7 +43,7 @@
                         </subviews>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWR-Ob-eWd">
-                        <rect key="frame" x="34" y="131" width="553" height="131"/>
+                        <rect key="frame" x="34" y="131" width="553" height="42"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
@@ -127,6 +127,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RE4-5C-npJ" customClass="WebImageView" customModule="VK_NewsFeed_App" customModuleProvider="target">
+                        <rect key="frame" x="34" y="203" width="567" height="92"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -135,6 +139,7 @@
                 <outlet property="iconImageView" destination="BK2-jz-IJg" id="Nnt-9J-VSx"/>
                 <outlet property="likesLabel" destination="rgA-yW-Vda" id="fVM-l6-6J6"/>
                 <outlet property="nameLabel" destination="WYY-SC-UXG" id="nTT-wf-sqU"/>
+                <outlet property="postImageView" destination="RE4-5C-npJ" id="01H-vE-xf8"/>
                 <outlet property="postLabel" destination="SWR-Ob-eWd" id="gsz-rG-IUa"/>
                 <outlet property="sharesLabel" destination="RCX-aw-b2R" id="RJ8-Xn-HyR"/>
                 <outlet property="viewsLabel" destination="grj-wU-4SF" id="cMs-ca-QBR"/>
