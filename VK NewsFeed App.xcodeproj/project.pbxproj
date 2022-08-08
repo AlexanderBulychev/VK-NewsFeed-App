@@ -20,6 +20,7 @@
 		FC735D022893B67C00DEB029 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC735CFC2893B67C00DEB029 /* NewsfeedViewController.swift */; };
 		FC735D032893B67C00DEB029 /* NewsfeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC735CFD2893B67C00DEB029 /* NewsfeedInteractor.swift */; };
 		FC735D052893BBF800DEB029 /* NewsfeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC735D042893BBF800DEB029 /* NewsfeedViewController.storyboard */; };
+		FC813D8228A11E5A00FD0201 /* NewsFeedCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC813D8128A11E5A00FD0201 /* NewsFeedCellLayoutCalculator.swift */; };
 		FC8F3ABB28880E3500243494 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F3ABA28880E3500243494 /* AuthService.swift */; };
 		FC8F3ABE288813FE00243494 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F3ABD288813FE00243494 /* AuthViewController.swift */; };
 		FC8F3AC02888142C00243494 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */; };
@@ -47,6 +48,7 @@
 		FC735CFC2893B67C00DEB029 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
 		FC735CFD2893B67C00DEB029 /* NewsfeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedInteractor.swift; sourceTree = "<group>"; };
 		FC735D042893BBF800DEB029 /* NewsfeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsfeedViewController.storyboard; sourceTree = "<group>"; };
+		FC813D8128A11E5A00FD0201 /* NewsFeedCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCellLayoutCalculator.swift; sourceTree = "<group>"; };
 		FC8F3ABA28880E3500243494 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FC8F3ABD288813FE00243494 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		FC8F3ABF2888142C00243494 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				FC2F6108289660A10062DD2B /* NewsfeedCell.swift */,
 				FC2F610A289662C10062DD2B /* NewsfeedCell.xib */,
+				FC813D8128A11E5A00FD0201 /* NewsFeedCellLayoutCalculator.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				FC735CF1288FE1A800DEB029 /* API.swift in Sources */,
 				FC2F6109289660A10062DD2B /* NewsfeedCell.swift in Sources */,
 				FC735D032893B67C00DEB029 /* NewsfeedInteractor.swift in Sources */,
+				FC813D8228A11E5A00FD0201 /* NewsFeedCellLayoutCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

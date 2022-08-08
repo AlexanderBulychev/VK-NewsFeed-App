@@ -18,8 +18,10 @@ final class NewsfeedViewController: UIViewController {
         super.viewDidLoad()
         setup()
         table.register(UINib(nibName: "NewsfeedCell", bundle: nil), forCellReuseIdentifier: NewsfeedCell.reuseId)
-
+        table.separatorStyle = .none
+        table.backgroundColor = .clear
         interactor?.makeRequest(request: Newsfeed.Model.Request.RequestType.getNewsFeed)
+        view.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
     }
     
     // MARK: Routing
@@ -73,6 +75,6 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        450
+        212
     }
 }

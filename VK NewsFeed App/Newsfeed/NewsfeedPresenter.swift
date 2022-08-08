@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 protocol NewsfeedPresentationLogic: AnyObject {
     func presentData(response: Newsfeed.Model.Response.ResponseType)
 }
@@ -6,6 +7,8 @@ protocol NewsfeedPresentationLogic: AnyObject {
 final class NewsfeedPresenter: NewsfeedPresentationLogic {
     
     weak var viewController: NewsfeedDisplayLogic?
+    var cellLayoutCalculator: FeedCellLayoutCalculatorProtocol = FeedCellLayoutCalculator()
+
     let dateFormatter: DateFormatter = {
         let df = DateFormatter()
         df.locale = Locale(identifier: "ru_Ru")
@@ -29,10 +32,12 @@ final class NewsfeedPresenter: NewsfeedPresentationLogic {
 
     private func cellViewModel(from feedItem: FeedItem, profiles: [Profile], groups: [Group]) -> FeedViewModel.Cell {
         let profile = profile(for: feedItem.sourceId, profiles: profiles, groups: groups)
-let photoAttachment = photoAttachment(feedItem: feedItem)
+        let photoAttachment = photoAttachment(feedItem: feedItem)
 
         let date = Date(timeIntervalSince1970: feedItem.date)
         let dateTitle = dateFormatter.string(from: date)
+
+        let sizes = cellLayoutCalculator.sizes(postText: feedItem.text, photoAttachment: photoAttachment)
 
         return FeedViewModel.Cell.init(
             iconUrlString: profile.photo,
@@ -43,7 +48,8 @@ let photoAttachment = photoAttachment(feedItem: feedItem)
             comments: String(feedItem.comments?.count ?? 0),
             shares: String(feedItem.reposts?.count ?? 0),
             views: String(feedItem.views?.count ?? 0),
-            photoAttachment: photoAttachment
+            photoAttachment: photoAttachment,
+            sizes: sizes
         )
     }
 
