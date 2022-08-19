@@ -48,8 +48,11 @@ class NewsfeedCell: UITableViewCell {
         postImageView.set(imageURL: nil)
     }
 
+
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        print("+++1 \(frame)")
 //        iconImageView.layer.cornerRadius = iconImageView.frame.width / 2
 //        iconImageView.clipsToBounds = true
 //        cardView.layer.cornerRadius = 10
@@ -57,6 +60,21 @@ class NewsfeedCell: UITableViewCell {
 //
 //        backgroundColor = .clear
 //        selectionStyle = .none
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        print("+++2 \(frame)")
+
+        iconImageView.layer.cornerRadius = iconImageView.frame.width / 2
+        iconImageView.clipsToBounds = true
+        cardView.layer.cornerRadius = 10
+        cardView.clipsToBounds = true
+
+        backgroundColor = .clear
+        selectionStyle = .none
+
     }
 
     func set(viewModel: FeedCellViewModel) {
